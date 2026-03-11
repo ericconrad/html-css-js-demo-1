@@ -1,0 +1,108 @@
+/* Custom fonts and other imports go first */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CSS variables */
+:root {
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+  --off-white: rgb(255, 255, 237);
+  --primary-color: rgb(18, 53, 36);
+  --primary-color-light: rgb(80, 200, 120);
+  --primary-color-bright: rgb(21, 94, 38);
+  --primary-color-dark: rgb(12, 38, 25);
+
+  --headline-color: var(--primary-color);
+}
+
+/* Box Model Reset: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Your styles go below */
+/* Default styles apply to screens less than 600px wide */
+body {
+  background-color: var(--off-white);
+  color: var(--primary-color-dark);
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  color: var(--headline-color);
+}
+
+h1 {
+  font-size: 40px;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:hover {
+  background-color: var(--primary-color-light);
+  color: var(--primary-color-dark);
+}
+
+
+
+
+
+
+
+/* Applies to all <section> elements*/
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.header {
+  background-blend-mode: multiply;
+  background-color: var(--primary-color-bright);
+  background-image: url("../img/pear-wee.jpg");
+  background-size: cover;
+  color: var(--off-white);
+  padding: 80px 0;
+  text-align: center;
+}
+
+/* make custom styles for .intro here, give it custom background-color and color values */
+
+.header h1 {
+  font-size: 72px;
+}
+
+/* Applies to anything with class="center" */
+.center {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for screens above or equal to 600px wide */
+@media (width >= 600px) {
+  :root {
+    --headline-color: var(--white);
+  }
+
+  body {
+    background-color: var(--primary-color);
+    color: var(--off-white);
+  }
+}
