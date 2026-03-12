@@ -1,0 +1,42 @@
+.header {
+  background-blend-mode: multiply;
+  background-color: var(--primary-color-bright);
+  background-image: url("../img/pear-wee.jpg");
+  background-size: cover;
+  color: var(--off-white);
+  padding: 80px 0;
+  text-align: center;
+}
+.header h1 {
+  font-size: 72px;
+}
+.header ol,
+.header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+.header ol li,
+.header ul li {
+  display: block;
+}
+.header ol li a,
+.header ul li a {
+  background-color: yellow;
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+.header ol li a:hover, .header ol li a:focus,
+.header ul li a:hover,
+.header ul li a:focus {
+  background-color: blue;
+  color: white;
+}
+.header ol li + li,
+.header ul li + li {
+  border-left: solid 2px red;
+}
+
+/* make custom styles for .intro here, give it custom background-color and color values *//*# sourceMappingURL=header.css.map */
